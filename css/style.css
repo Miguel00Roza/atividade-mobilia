@@ -1,0 +1,150 @@
+:root {
+  --main-bg-color: brown;
+  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    text-decoration: none; /* remove o sublinhado dos links */
+    color: black; /* altera a cor de todos os links das páginas */
+}
+
+/*-----------------header---------------------*/
+header {
+  padding: 5vw 10vw 3vw 10vw;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 0 10px 0 10px;
+}  
+nav h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+atual {
+  color: #0D0E43;
+}
+
+
+/*----------------------------banner-----------------------------*/
+.banner {
+  padding: 5vw;
+  display: flex;
+  background-color: #F2F0FF;
+  & h2 {
+    font-weight: bold;
+  }
+  & h3 {
+     font-weight: bold;
+  }
+}
+.banner .best {
+  color: #FB2E86;
+}
+.banner h3 {
+  color: #8A8FB9;
+}
+.banner h2 {
+  font-size: 5rem;
+}
+/*--------------------------produtos-----------------------------*/
+.produtos {
+  padding: 5vw 15vw 5vw 15vw;
+}
+.produtos h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1A0B5B;
+}
+.produtos ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vw;
+}
+.produtos ul li {
+  width: 33%;
+  height: 100%;
+  & img {
+    background-color: #F7F7F7;
+    text-align: center;
+  }
+}
+.produtos p {
+  color: #151875;
+  text-align: start;
+  margin: 10px 0 10px 0;
+  & span {
+    margin-right: 20px;
+    font-weight: bold;
+  }
+}
+.button {
+    background: #FB2E86;
+    font-size: 17px;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    margin-top: 50px;
+    border-radius: 3px;
+}
+
+/*------------------------convite--------------------------*/
+
+.convite {
+  height: 460px;
+  background: url(../src/images/back-section-update.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  & h2 {
+    font-size: 35px;
+    color: #1A0B5B;
+    font-weight: bold;
+  }
+  & button {
+    background: #FB2E86;
+    font-size: 17px;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    margin-top: 50px;
+    border-radius: 3px;
+  }
+}
+
+/*------------------------Footer--------------------------*/
+
+footer {
+  background: #EEEFFB;
+  display: flex;
+  justify-content: space-between;
+  padding: 5vw 10vw 5vw 10vw;
+  & p {
+    color: #8A8FB9;
+  }
+  & h2 {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  & h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  & nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  & .text1 p {
+    margin-top: 10px;
+  }
+}
